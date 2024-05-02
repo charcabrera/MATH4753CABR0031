@@ -38,7 +38,7 @@ This function takes in a dataset x and samples from it length(x)*iter times with
 ```{r}
 mycltp(n=100,iter=10000,lambda=10)
 ```
-This function will calculate the mean of n*iter poisson samples of size n, and create a histogram of the means. Lambda is the lambda of the poisson distribution.
+This function will calculate the mean of n*iter poisson samples of size n, and create a histogram of the means. Lambda is the lambda of the poisson distribution. It also generates two graphs to compare the probability function for the poisson distribution, and a relative frequency graph.
 
 ## ntickets
 ```{r}
