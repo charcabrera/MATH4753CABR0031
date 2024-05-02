@@ -25,6 +25,7 @@ This is the package I made over the course of the semester for Applied Statistic
 ```{r}
 length(fire$DISTANCE)
 ```
+
 This dataset contains information on fires in a suburb. The paired datapoints are the distance from a fire station in miles and the damage caused by the fire in thousands of dollars.
 
 ## myboot2
@@ -32,22 +33,27 @@ This dataset contains information on fires in a suburb. The paired datapoints ar
 x = 1:10
 t = myboot2(iter=10000,x,fun="mean",alpha=0.05)
 ```
+
 This function takes in a dataset x and samples from it length(x)*iter times with replacement. It then divides those up into sets of size length(x) and applies fun to all of them. After that, it takes the data and forms a histogram with a (1-alpha)% confidence interval. It then returns a list containing fun, x, and xstat, which is the samples after fun has been applied.
 
 ## mycltp
 ```{r}
+par(mar=c(2, 2, 2, 2))
 mycltp(n=100,iter=10000,lambda=10)
 ```
+
 This function will calculate the mean of n*iter poisson samples of size n, and create a histogram of the means. Lambda is the lambda of the poisson distribution. It also generates two graphs to compare the probability function for the poisson distribution, and a relative frequency graph.
 
 ## ntickets
 ```{r}
 ntickets(N=400,gamma = 0.02, p = 0.95)
 ```
+
 Finds the optimal number of plane tickets to sell given the number of seats on the plane (N), the probability that too many people will show up to the flight (gamma), and the probability that a given passenger shows up. It builds a graph showing both the discrete and continuous cases, and returns a list containing the parameters and the values of the discrete and continuous estimates.
 
 ## mysample
 ```{r}
 mysample(n=1000,iter=30,time=.05)
 ```
+
 Randomly samples n times from the numbers 1-10 with replacement and generates a graph of the relative density of each number. It repeats this iter times with time (in seconds) between each iteration.
