@@ -23,7 +23,7 @@ This is the package I made over the course of the semester for Applied Statistic
 
 ## Data
 ```{r}
-length(fire$DISTANCE)
+head(fire)
 ```
 
 This dataset contains information on fires in a suburb. The paired datapoints are the distance from a fire station in miles and the damage caused by the fire in thousands of dollars.
