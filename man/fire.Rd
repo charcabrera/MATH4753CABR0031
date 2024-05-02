@@ -6,22 +6,24 @@
 \title{Fire Damage Data}
 \format{
 ## `fire`
-A data frame with 7,240 rows and 60 columns:
+A data frame with 15 rows and 2 columns:
 \describe{
   \item{country}{United States}
   \item{iso2, iso3}{US, USA}
-  \item{year}{}
+  \item{year}{2016}
   ...
 }
 }
 \source{
-<https://www.who.int/teams/global-tuberculosis-programme/data>
+<STATISTICS for Engineering and the Sciences, SIXTH EDITION by Mendenhall et al.>
 }
 \usage{
 fire
 }
 \description{
-A subset of data from the World Health Organization Global Tuberculosis
+A dataset containing information about fires in a suburban area.
+Each row contains two datapoints, the distance from the fire and the
+cost of damage due to the fire.
 Report ...
 }
 \keyword{datasets}
